@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-public class BoardController {
+public class PostController {
 
     @Autowired
     PostService postService;
