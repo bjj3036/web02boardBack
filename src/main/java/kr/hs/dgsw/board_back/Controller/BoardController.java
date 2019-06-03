@@ -13,15 +13,7 @@ import java.util.List;
 public class BoardController {
 
     @Autowired
-    UserService userService;
-
-    @Autowired
     PostService postService;
-
-    @GetMapping(value = "/api/user")
-    public List users() {
-        return this.userService.findAll();
-    }
 
     @GetMapping(value = "/api/board")
     public List posts() {
