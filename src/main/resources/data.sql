@@ -9,4 +9,7 @@ values ('user1', '1234', 'test1', 'user1@dgsw.hs.kr'),
        ('user6', '1234', 'test6', 'user6@dgsw.hs.kr');
 
 insert into post(user_id, title, content)
-values(1, 'test1의 글 제목', 'test1의 글 내용');
+values (1, 'test1의 글 제목', 'test1의 글 내용'),
+       (1, 'test1의 두 번째 글 제목', 'test1의 두 번째 글 내용'),
+       (2, 'test2의 글 제목', 'test1의 글 내용'),
+       (3, 'test3의 글 제목', 'test1의 글 내용');

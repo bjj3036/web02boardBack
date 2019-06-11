@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public interface PostService {
-    List<Post> findAll();
+    List findAll();
 
     int deleteById(Long id);
 

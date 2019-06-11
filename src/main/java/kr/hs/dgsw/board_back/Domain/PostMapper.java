@@ -9,7 +9,7 @@ import java.util.List;
 @Mapper
 public interface PostMapper {
 
-    List<Post> findAll();
+    List findAll();
 
     int deleteById(@Param("id") Long id);
 
