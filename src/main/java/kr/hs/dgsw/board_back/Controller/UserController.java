@@ -33,9 +33,14 @@ public class UserController {
         return this.userService.modify(user);
     }
 
-    @PutMapping(value = "/api/user/findById/{id}")
+    @GetMapping(value = "/api/user/findById/{id}")
     public User findById(@PathVariable Long id){
         return this.userService.findById(id);
+    }
+
+    @PostMapping(value = "api/user/login")
+    public User login(@RequestBody User user){
+        return this.userService.login(user);
     }
 
 }

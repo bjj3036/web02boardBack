@@ -26,4 +26,11 @@
         where id = #{id}
     </select>
 
+    <select id="findByAccount" parameterType="String"
+            resultType="kr.hs.dgsw.board_back.Domain.User">
+        select id, account, username, email, password
+        from user
+        where account = #{account}
+    </select>
+
 </mapper>

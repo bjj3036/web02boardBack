@@ -17,4 +17,6 @@ public interface UserService {
     int modify(User user);
 
     User findById(Long id);
+
+    User login(User user);
 }
